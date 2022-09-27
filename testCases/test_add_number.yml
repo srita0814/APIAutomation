@@ -1,0 +1,12 @@
+addNumberTest:
+  - case: Input positive numbers
+    numbers: [1,2]
+  - case: Input negative numbers
+    numbers: [-1,-2]
+  - case: Input big numbers
+    numbers: [ 999999999,1 ]
+  - case: Input zero numbers
+    numbers: [ 0,1 ]
+  - case: Input illegal numbers
+    numbers: [ 'a','b' ]
+
