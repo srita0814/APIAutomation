@@ -23,7 +23,7 @@ class TestRequest:
         # print(response.json())
         print(response.cookies)
 
-    def test_response2(self):
+    def test_response1(self):
         url = 'http://httpbin.org/get'
         data = {'key1': 'value1', 'key2': 'value2'}
         # 将 字典类型 转换为 JSON 对象
