@@ -14,9 +14,13 @@ class TestRequest:
         r = requests.request('post', url, data=dict_data)
         r2 = requests.request('post', url, data=str_data)
         r3 = requests.request('post', url, data=list_of_tuple_data)
-        print(r.text)
-        print(r2.text)
-        print(r3.text)
+        # print(r.text)
+        # print(r2.text)
+        # print(r3.text)
+        # print(r.request.headers)
+        # print(r2.request.headers)
+        # print(r3.request.headers)
+        # assert (r.text == r3.text)
 
     @pytest.mark.post
     def test_post_body_json(self):
@@ -28,9 +32,12 @@ class TestRequest:
         r = requests.request('post', url, json=dict_data)
         r2 = requests.request('post', url, json=str_data)
         r3 = requests.request('post', url, json=list_of_tuple_data)
-        print(r.text)
-        print(r2.text)
-        print(r3.text)
+        # print(r.text)
+        # print(r2.text)
+        # print(r3.text)
+        print(r.request.headers)
+        print(r2.request.headers)
+        print(r3.request.headers)
 
     # 文件上传
     @pytest.mark.post
